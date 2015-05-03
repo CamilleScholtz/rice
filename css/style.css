@@ -1,224 +1,167 @@
-/* Base
-   ================================================== */
+/* Base */
 
 @font-face {
-    font-family: "Alte Haas Grotesk";
-    font-style: normal;
-    font-weight: normal;
-    src: local("Alte Haas Grotesk"), url(../assets/fonts/AlteHaasGroteskRegular.woff) format("woff");
+	font-family: "Alte Haas Grotesk";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Alte Haas Grotesk"), url(../assets/font/AlteHaasGroteskRegular.woff) format("woff");
 }
 
 @font-face {
-    font-family: "Alte Haas Grotesk Bold";
-    font-style: normal;
-    font-weight: normal;
-    src: local("Alte Haas Grotesk Bold"), url(../assets/fonts/AlteHaasGroteskBold.woff) format("woff");
+	font-family: "Alte Haas Grotesk Bold";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Alte Haas Grotesk Bold"), url(../assets/font/AlteHaasGroteskBold.woff) format("woff");
 }
 
 * {
-    text-decoration: none
+	text-decoration: none;
+	outline: 0px;
 }
 
 html {
-    background: #fff;
-    margin: 0 auto;
-    max-width: 1200px;
+	background: #F9F9F9;
+	margin: 0 auto;
+	max-width: 1200px;
 }
 
-@media (max-width: 1280px) {
-    html {
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-}
-
-body {
-    font-family: "Alte Haas Grotesk", "sans-serif";
-    margin: 0;
-    padding: 0;
-}
-
-#border {
-    border: 16px solid #ecedef;
-    background: none;
-    height: -moz-calc(100% - 32px);
-    height: -o-calc(100% - 32px);
-    height: -webkit-calc(100% - 32px);
-    height: calc(100% - 32px);
-    left: 0;
-    pointer-events: none;
-    position: fixed;
-    top: 0;
-    width: -moz-calc(100% - 32px);
-    width: -o-calc(100% - 32px);
-    width: -webkit-calc(100% - 32px);
-    width: calc(100% - 32px);
-    z-index: 9001;
+body { 
+	font-family: "Alte Haas Grotesk", "sans-serif";
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0;
+	top: 0px;
+	width: 75%;
 }
 
 ::selection {
-    background: rgba(26, 163, 154, 0.5)
+	background: rgba(26, 163, 154, 0.5);
 }
 
 ::-moz-selection {
-    background: rgba(26, 163, 154, 0.5)
+	background: rgba(26, 163, 154, 0.5);
 }
 
-/* Header
-   ================================================== */
+/* Header */
 
-header {
-    -moz-box-shadow: 0 0 0 6px #fff;
-    -webkit-box-shadow: 0 0 0 6px #fff;
-    background: #fff;
-    border-bottom: 1px solid #e2e4e7;
-    box-shadow: 0 0 0 6px #fff;
-    height: 143px;
-    max-width: 1200px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9000;
+#header {
+	background: #FFFFFF;
+	border: 20px solid #FFFFFF;
+	margin-left: -20px;
+	top: 0px;
+	width: 210px;
 }
 
-@media (max-width: 1280px) {
-   header {
-        width: -moz-calc(100% - 80px);
-        width: -o-calc(100% - 80px);
-        width: -webkit-calc(100% - 80px);
-        width: calc(100% - 80px);
-    }
+#header h1 {
+	color: #3C4C5C;
+	font-family: "Alte Haas Grotesk Bold", "sans-serif";
+	font-size: 20px;
+	font-weight: normal;
 }
 
-header h2 {
-    color: #1aa39a;
-    font-family: "Alte Haas Grotesk Bold", "sans-serif";
-    font-size: 20px;
-    font-weight: normal;
-    margin-left: 225px;
-    margin-top: -38px;
+#header h2 {
+	color: #1AA39A;
+	font-family: "Alte Haas Grotesk Bold", "sans-serif";
+	font-size: 15px;
+	font-weight: normal;
 }
 
-header h4 {
-    color: #3c4c5c;
-    font-family: "Alte Haas Grotesk Bold", "sans-serif";
-    font-size: 38px;
-    font-weight: normal;
-    margin-left: 52px;
-    margin-top: -16px;
+#header h2 a {
+	-moz-transition: opacity 0.2s ease-in-out 0s;
+	-o-transition: opacity 0.2s ease-in-out 0s;
+	-webkit-transition: opacity 0.2s ease-in-out 0s;
+	color: #1AA39A;
+	transition: opacity 0.2s ease-in-out 0s;
 }
 
-header h6 {
-    color: #1aa39a;
-    float: right;
-    font-family: "Alte Haas Grotesk Bold", "sans-serif";
-    font-size: 18px;
-    font-weight: normal;
-    line-height: 43px;
-    position: absolute;
-    right: 85px;
-    top: 6px;
+#header h2 a:hover {
+	color: #158C85
 }
 
-header h5 {
-    border-bottom: 1px solid #e2e4e7;
-    border-top: 1px solid #e2e4e7;
-    color: #1aa39a;
-    float: right;
-    font-family: "Alte Haas Grotesk Bold", "sans-serif";
-    font-size: 50px;
-    font-weight: normal;
-    line-height: 40px;
-    padding-bottom: 3px;
-    padding-left: 275px;
-    position: absolute;
-    right: 20px;
-    top: -37px;
-}
-
-header h1 {
-    color: #1aa39a;
-    font-family: "Alte Haas Grotesk", "sans-serif";
-    font-size: 20px;
-    font-weight: normal;
-    margin-left: 54px;
-    margin-top: 42px;
-}
-
-header h1 a {
-    -moz-transition: opacity 0.2s ease-in-out 0s;
-    -o-transition: opacity 0.2s ease-in-out 0s;
-    -webkit-transition: opacity 0.2s ease-in-out 0s;
-    color: #1aa39a;
-    transition: opacity 0.2s ease-in-out 0s;
-}
-
-header h1 a:hover {
-    color: #158c85
-}
-
-header h7 {
-    color: #3c4c5c;
-    float: right;
-    font-family: "Alte Haas Grotesk", "sans-serif";
-    font-size: 13px;
-    font-weight: normal;
-    line-height: 43px;
-    position: absolute;
-    right: 151px;
-    text-align: left;
-    top: 48px;
-    width: 200px;
-}
-
-header h3 {
-    color: #3c4c5c;
-    font-family: "Alte Haas Grotesk", "sans-serif";
-    font-size: 10px;
-    font-weight: normal;
-    margin-left: 51px;
-    margin-top: -16px;
-}
-
-.change2, .change3, .change4 {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    opacity: 0;
-}
-
-/* Content
-   ================================================== */
+/* Content */
 
 #content {
-    background: #fff;
-    margin-top: 150px;
-    max-width: 100%;
+	margin-top: 8px;
+	width: 100%;
+}
+
+#content img {
+	border: 20px solid #FFFFFF;
+	margin-bottom: 8px;
+	margin-left: -20px;
+	max-width: 100%;
+}
+
+#text {
+	margin-top: 8px;	
+	background: #FFFFFF;
+	border: 20px solid #FFFFFF;
+	margin-bottom: 8px;
+	margin-left: -20px;
+	width: 100%;
+}
+
+#text h1 {
+	color: #1AA39A;
+	font-family: "Alte Haas Grotesk Bold", "sans-serif";
+	font-size: 15px;
+	font-weight: normal;
+}
+
+#text h1 a {
+	-moz-transition: opacity 0.2s ease-in-out 0s;
+	-o-transition: opacity 0.2s ease-in-out 0s;
+	-webkit-transition: opacity 0.2s ease-in-out 0s;
+	color: #1AA39A;
+	transition: opacity 0.2s ease-in-out 0s;
+}
+
+#text h1 a:hover {
+	color: #158C85
+}
+
+#text p {
+	color: #3C4C5C;
+	font-family: "Alte Haas Grotesk", "sans-serif";
+	font-size: 15px;
+	font-weight: normal;
 }
 
 hr {
-    background: #e2e4e7;
-    border: none;
-    clear: both;
-    height: 1px;
-    margin-bottom: 32px;
-    margin-top: 32px;
-    width: 100%;
+	border: 0;
+	height: 20px;
+	margin-bottom: 8px;
+	margin-left: -20px;
+	margin-right: -20px;
+	margin-top: 0px;
+	padding: 0;
 }
 
-.hrfix {
-    margin-bottom: 0;
-    margin-top: -7px;
+#hr1 {
+	height: 0px !important;
+	margin: 0px !important;
 }
 
-.frame {
-    margin-bottom: 0;
-    margin-top: 0;
-    max-width: 1200px;
-    width: 100%;
+#popup1, #popup2, #popup3, #popup4 {
+	-moz-transition: margin-right 0.2s ease-in-out 0s;
+	-o-transition: margin-right 0.2s ease-in-out 0s;
+	-webkit-transition: margin-right 0.2s ease-in-out 0s;
+	background: #FFFFFF;
+	padding-left: 14px;
+	padding-right: 14px;
+	right: 0px;
+	top: 20px;
+	margin-right: -400px;
+	position: fixed;
+	z-index: 900;
+	transition: margin-right 0.2s ease-in-out 0s;
 }
 
-.frame img {
-    margin-bottom: 8px;
-    margin-top: 8px;
-    max-width: 100%;
+#popup1 h1, #popup2 h1, #popup3 h1, #popup4 h1 {
+	color: #1AA39A;
+	font-family: "Alte Haas Grotesk Bold", "sans-serif";
+	font-size: 12px;
+	font-weight: normal;
 }
+
+
