@@ -93,7 +93,8 @@ body {
 }
 
 #text {
-	margin-top: 8px;	
+	margin-top: 8px;
+	margin-bottom: 8px;
 	background: #FFFFFF;
 	border: 20px solid #FFFFFF;
 	margin-bottom: 8px;
