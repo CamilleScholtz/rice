@@ -67,11 +67,11 @@ body {
 }
 
 #header h2 a {
-	-moz-transition: opacity 0.2s ease-in-out 0s;
-	-o-transition: opacity 0.2s ease-in-out 0s;
-	-webkit-transition: opacity 0.2s ease-in-out 0s;
+	-moz-transition: color 0.1s ease-in-out 0s;
+	-o-transition: color 0.1s ease-in-out 0s;
+	-webkit-transition: color 0.1s ease-in-out 0s;
 	color: #1AA39A;
-	transition: opacity 0.2s ease-in-out 0s;
+	transition: color 0.1s ease-in-out 0s;
 }
 
 #header h2 a:hover {
@@ -86,10 +86,18 @@ body {
 }
 
 #content img {
+	-moz-transition: opacity 0.1s ease-in-out 0s;
+	-o-transition: opacity 0.1s ease-in-out 0s;
+	-webkit-transition: opacity 0.1s ease-in-out 0s;
 	border: 20px solid #FFFFFF;
 	margin-bottom: 8px;
 	margin-left: -20px;
 	max-width: 100%;
+	transition: opacity 0.1s ease-in-out 0s;
+}
+
+#content img:hover {
+	opacity: 0.95;
 }
 
 #text {
@@ -110,11 +118,11 @@ body {
 }
 
 #text h1 a {
-	-moz-transition: opacity 0.2s ease-in-out 0s;
-	-o-transition: opacity 0.2s ease-in-out 0s;
-	-webkit-transition: opacity 0.2s ease-in-out 0s;
+	-moz-transition: color 0.1s ease-in-out 0s;
+	-o-transition: color 0.1s ease-in-out 0s;
+	-webkit-transition: color 0.1s ease-in-out 0s;
 	color: #1AA39A;
-	transition: opacity 0.2s ease-in-out 0s;
+	transition: color 0.1s ease-in-out 0s;
 }
 
 #text h1 a:hover {
@@ -129,18 +137,19 @@ body {
 }
 
 hr {
-	border: 0;
+	border: none;
+	background: #FFFFFF;
 	height: 20px;
+	margin-top: 0px;
 	margin-bottom: 8px;
 	margin-left: -20px;
 	margin-right: -20px;
-	margin-top: 0px;
 	padding: 0;
 }
 
-#hr1 {
-	height: 0px !important;
+#hr1, #hr5, #hidden {
 	margin: 0px !important;
+	height: 0px !important;
 }
 
 #popup1, #popup2, #popup3, #popup4 {
