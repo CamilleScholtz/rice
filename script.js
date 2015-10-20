@@ -4,36 +4,36 @@ $(document).ready(function(){
 			setTimeout(function(){
 				$('#border').animate({
 					opacity: "0"
-				}, 100 );
-			}, 100);
+				}, 50 );
+			}, 50);
 
 			$('#border').animate({
 				backgroundColor: "#EFEEEE",
 				width: "300px"
-			}, 300 );
+			}, 150 );
 			$('#border h2').animate({
 				opacity: "0"
-			}, 100 );
+			}, 50 );
 			$('#header').animate({
 				opacity: "1"				
-			}, 100 );
+			}, 200 );
 		} else {
 			setTimeout(function(){
 				$('#border').animate({
 					backgroundColor: "#F9F7F6",
 					width: $("body").width() - 64 + "px"
-				}, 300 );
+				}, 150 );
 				$('#border h2').animate({
 					opacity: "1"
-				}, 800 );
+				}, 400 );
 				$('#header').animate({
 					opacity: "0"
-				}, 100 );
-			}, 100);
+				}, 50 );
+			}, 50);
 
 			$('#border').animate({
 				opacity: "1"
-			}, 100 );
+			}, 50 );
 		}
-	}, { offset: 260 });
+	}, { offset: 180 });
 });
