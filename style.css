@@ -80,14 +80,23 @@ h2 a:hover {
 }
 
 #border h1, #border h2 {
-	color: #E7E7E7;
+	color: #DEDDDC;
 	display: inline-block;
 	margin: 0 auto;
 	vertical-align: middle;
 }
 
 #border h2 {
-	margin-top: 10px;
+	margin-top: 9px;
+}
+
+#border:first-child img {
+	position: absolute;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right:auto;
+	bottom: 80px;
 }
 
 .helper {
