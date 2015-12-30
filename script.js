@@ -1,4 +1,16 @@
 $(document).ready(function(){
+	$('h1').waypoint(function(direction) {
+		if (direction === 'down') {
+			$('#border:first-child img').animate({
+				opacity: "0"				
+			}, 200 );
+		} else {
+			$('#border:first-child img').animate({
+				opacity: "1"
+			}, 200 );
+		}
+	}, { offset: -400 });
+
 	$('hr').waypoint(function(direction) {
 		if (direction === 'down') {
 			setTimeout(function(){
