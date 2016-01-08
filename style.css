@@ -25,7 +25,7 @@ html, body {
 }
 
 
-/* HEADER */
+/* HEADER SMALL */
 
 #header {
 	background: #EFEEEE;
@@ -38,37 +38,12 @@ html, body {
 	z-index: 9000;
 }
 
-h1 {
-	color: #DEDDDC;
-	font-family: "Raleway", "sans-serif";
-	font-size: 54px;
-	line-height: 14px;
-	font-weight: normal;
-	margin-left: 20px;
-}
-
-h2 {
-	color: #DEDDDC;
-	font-family: "Raleway", "sans-serif";
-	font-size: 16px;
-	font-weight: normal;
-	margin-left: 23px;
-}
-
-h2 a {
-	-moz-transition: color 0.1s ease-in-out 0s;
-	-o-transition: color 0.1s ease-in-out 0s;
-	-webkit-transition: color 0.1s ease-in-out 0s;
-	color: #dedddc;
-	transition: color 0.1s ease-in-out 0s;
-}
-
-h2 a:hover {
-	color: #F8C6AD;
+#header h1, #header h2, #header a {
+	color: #DEDEDE;
 }
 
 
-/* Content */
+/* HEADER BIG */
 
 #border {
 	text-align: center;
@@ -82,8 +57,22 @@ h2 a:hover {
 	background: #F9F7F6;
 }
 
+#square {
+	background: #FFFFFF;
+	position: absolute;
+	height: 5px;
+	width: 300px;
+	padding-right: 100px;
+	transform: rotate(-2deg);
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	top: calc(50% + 42px);
+}
+
 #border h1, #border h2 {
-	color: #DEDDDC;
+	color: #E7E7E7;
 	display: inline-block;
 	margin: 0 auto;
 	vertical-align: middle;
@@ -101,6 +90,38 @@ h2 a:hover {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+h1 {
+	color: #E7E7E7;
+	font-family: "Raleway", "sans-serif";
+	font-size: 54px;
+	line-height: 14px;
+	font-weight: normal;
+	margin-left: 20px;
+}
+
+h2 {
+	color: #E7E7E7;
+	font-family: "Raleway", "sans-serif";
+	font-size: 16px;
+	font-weight: normal;
+	margin-left: 23px;
+}
+
+h2 a {
+	-moz-transition: color 0.1s ease-in-out 0s;
+	-o-transition: color 0.1s ease-in-out 0s;
+	-webkit-transition: color 0.1s ease-in-out 0s;
+	color: #E7E7E7;
+	transition: color 0.1s ease-in-out 0s;
+}
+
+h2 a:hover {
+	color: #F8C6AD;
+}
+
+
+/* CONTENT */
 
 .helper {
 	display: inline-block;

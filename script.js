@@ -27,7 +27,7 @@ $(document).ready(function(){
 				opacity: "0"
 			}, 50 );
 			$('#header').animate({
-				opacity: "1"				
+				opacity: "1"
 			}, 200 );
 		} else {
 			setTimeout(function(){
@@ -50,7 +50,8 @@ $(document).ready(function(){
 	}, { offset: 180 });
 });
 
-$( window ).resize(function() {
+
+$(window).resize(function() {
 		$('#border').css({
 			"width": $("body").width() - 114 + "px"
 		}, 150 );
