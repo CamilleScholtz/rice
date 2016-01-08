@@ -17,8 +17,11 @@ html, body {
 	margin: 0 auto;
 }
 
-::selection , ::-moz-selection {
-	background: #f6f6f6;
+::selection {
+	background: rgba(243,201,179,0.2);
+}
+::-moz-selection {
+	background: rgba(243,201,179,0.2);
 }
 
 
@@ -61,7 +64,7 @@ h2 a {
 }
 
 h2 a:hover {
-	color: #f8c6ad;
+	color: #F8C6AD;
 }
 
 
@@ -76,11 +79,11 @@ h2 a:hover {
 }
 
 #border:first-child {
-	background: #f9f7f6;
+	background: #F9F7F6;
 }
 
 #border h1, #border h2 {
-	color: #dedddc;
+	color: #DEDDDC;
 	display: inline-block;
 	margin: 0 auto;
 	vertical-align: middle;
@@ -106,9 +109,9 @@ h2 a:hover {
 }
 
 #content img {
+	border: 20px solid #F9F7F6;
 	margin: 0 auto;
 	vertical-align: middle;
-	border: 20px solid #f9f7f6;
 }
 
 hr {
