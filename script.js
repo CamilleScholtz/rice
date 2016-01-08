@@ -33,7 +33,7 @@ $(document).ready(function(){
 			setTimeout(function(){
 				$('#border').animate({
 					backgroundColor: "#F9F7F6",
-					width: $("body").width() - 64 + "px"
+					width: $("body").width() - 114 + "px"
 				}, 150 );
 				$('#border h2').animate({
 					opacity: "1"
@@ -48,4 +48,10 @@ $(document).ready(function(){
 			}, 50 );
 		}
 	}, { offset: 180 });
+});
+
+$( window ).resize(function() {
+		$('#border').css({
+			"width": $("body").width() - 114 + "px"
+		}, 150 );
 });

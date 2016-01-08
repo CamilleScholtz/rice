@@ -18,7 +18,7 @@ html, body {
 }
 
 ::selection , ::-moz-selection {
-	background: #EFEEEE;
+	background: #f6f6f6;
 }
 
 
@@ -27,10 +27,10 @@ html, body {
 #header {
 	background: #EFEEEE;
 	height: 125px;
-	left: 32px;
+	left: 57px;
 	width: 300px;
 	position: fixed;
-	top: 32px;
+	top: 57px;
 	opacity: 0;
 	z-index: 9000;
 }
@@ -38,16 +38,16 @@ html, body {
 h1 {
 	color: #DEDDDC;
 	font-family: "Raleway", "sans-serif";
-	font-size: 42px;
+	font-size: 54px;
+	line-height: 14px;
 	font-weight: normal;
-	line-height: 24px;
 	margin-left: 20px;
 }
 
 h2 {
 	color: #DEDDDC;
 	font-family: "Raleway", "sans-serif";
-	font-size: 15px;
+	font-size: 16px;
 	font-weight: normal;
 	margin-left: 23px;
 }
@@ -56,12 +56,12 @@ h2 a {
 	-moz-transition: color 0.1s ease-in-out 0s;
 	-o-transition: color 0.1s ease-in-out 0s;
 	-webkit-transition: color 0.1s ease-in-out 0s;
-	color: #DEDDDC;
+	color: #dedddc;
 	transition: color 0.1s ease-in-out 0s;
 }
 
 h2 a:hover {
-	color: #BAC2CC;
+	color: #f8c6ad;
 }
 
 
@@ -69,34 +69,34 @@ h2 a:hover {
 
 #border {
 	text-align: center;
-	height: calc(100vh - 64px);
-	width: calc(100% - 64px);
-	margin-left: 32px;
-	margin-top: 32px;
+	height: calc(100vh - 114px);
+	width: calc(100% - 114px);
+	margin-left: 57px;
+	margin-top: 57px;
 }
 
 #border:first-child {
-	background: #F9F7F6;
+	background: #f9f7f6;
 }
 
 #border h1, #border h2 {
-	color: #DEDDDC;
+	color: #dedddc;
 	display: inline-block;
 	margin: 0 auto;
 	vertical-align: middle;
 }
 
 #border h2 {
-	margin-top: 9px;
+	margin-top: 14px;
 }
 
 #border:first-child img {
-	bottom: 80px;
+	bottom: 114px;
 	position: absolute;
-	left:0;
-	right:0;
-	margin-left:auto;
-	margin-right:auto;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .helper {
@@ -108,7 +108,7 @@ h2 a:hover {
 #content img {
 	margin: 0 auto;
 	vertical-align: middle;
-	border: 20px solid #F9F7F6;
+	border: 20px solid #f9f7f6;
 }
 
 hr {
