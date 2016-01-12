@@ -20,7 +20,7 @@ $(document).ready(function(){
 			}, 50);
 
 			$('#border').animate({
-				backgroundColor: "#EFEEEE",
+				backgroundColor: "#FFFFFF",
 				width: "300px"
 			}, 150 );
 			$('#border h2').animate({
@@ -32,7 +32,7 @@ $(document).ready(function(){
 		} else {
 			setTimeout(function(){
 				$('#border').animate({
-					backgroundColor: "#F9F7F6",
+					backgroundColor: "#F6F6F6",
 					width: $("body").width() - 114 + "px"
 				}, 150 );
 				$('#border h2').animate({
