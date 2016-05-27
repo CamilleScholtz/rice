@@ -1,143 +1,123 @@
 /* BASE */
 
 @font-face {
-	font-family: "Raleway";
-	font-style: normal;
-	font-weight: 700;
-	src: local("Raleway Bold"), local("Raleway-Bold"), url("https://fonts.gstatic.com/s/raleway/v9/JbtMzqLaYbbbCL9X6EvaI_k_vArhqVIZ0nv9q090hN8.woff2") format("woff2");
+	font-family: "bold";
+	src: url("assets/fonts/GillSans_Droptokyo_Bold.woff") format("woff");
 }
 
 * {
 	text-decoration: none;
 	outline: 0px;
+	font-style :normal;
+	font-weight: normal;
+	font-size: 100%;
 }
 
 html, body {
-	background: #FFFFFF;
-	margin: 0 auto;
+	background: #D8C0A3;
+	margin: 0px;
+}
+
+body {
+	margin: 0px;
+}
+
+#border {
+	background: #F0D6B5;
+	box-shadow: 7px 0px 30px rgba(195, 110, 56, 0.2);
+	text-align: center;
+	overflow-y: hidden; /* lfdev: setting this to scroll will make it scroll, however there will be a scrollbar */
+	height: calc(100vh - 60px);
+	margin: 30px;
 }
 
 ::selection {
 	background: rgba(243,201,179,0.2);
 }
+
 ::-moz-selection {
 	background: rgba(243,201,179,0.2);
 }
 
 
-/* HEADER SMALL */
+/* HEADER */
 
 #header {
-	background: #EFEEEE;
-	height: 125px;
-	left: 57px;
-	width: 300px;
-	position: fixed;
-	top: 57px;
-	opacity: 0;
-	z-index: 9000;
+	height: calc(65vh + 60px);
 }
 
-#header h1, #header h2, #header a {
-	color: #DEDEDE;
+#header #top {
+	background: #D8C0A3;
+	height: 120px;
 }
 
-
-/* HEADER BIG */
-
-#border {
-	text-align: center;
-	height: calc(100vh - 114px);
-	width: calc(100% - 114px);
-	margin-left: 57px;
-	margin-top: 57px;
+#header h1, #header a, #header .punpun {
+	color: #020201;
+	font-family: "bold", sans;
 }
 
-#border:first-child {
-	background: #F9F7F6;
+#header h1 {
+	font-size: 130px;
+	margin-top: 48px;
 }
 
-#square {
-	background: #FFFFFF;
-	position: absolute;
-	height: 5px;
-	width: 300px;
-	padding-right: 100px;
-	transform: rotate(-2deg);
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	top: calc(50% + 42px);
+#header #links {
+	margin-top: 44px;
 }
 
-#border h1, #border h2 {
-	color: #E7E7E7;
-	display: inline-block;
-	margin: 0 auto;
-	vertical-align: middle;
+#header a, #header .punpun {
+	border-bottom: 3px solid #020201;
+	font-size: 14px;
+	margin-left: 18px;
+	margin-right: 18px;
 }
 
-#border h2 {
-	margin-top: 14px;
+#header .punpun {
+	border-bottom: none !important;
+	font-size: 22px !important;
+	position: relative;
+	top: 5px;
+	right: 12px;
 }
 
-#border:first-child img {
-	bottom: 114px;
-	position: absolute;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
+#header a:hover {
+	color: #615749;
 }
-
-h1 {
-	color: #E7E7E7;
-	font-family: "Raleway", "sans-serif";
-	font-size: 54px;
-	line-height: 14px;
-	font-weight: normal;
-	margin-left: 20px;
-}
-
-h2 {
-	color: #E7E7E7;
-	font-family: "Raleway", "sans-serif";
-	font-size: 16px;
-	font-weight: normal;
-	margin-left: 23px;
-}
-
-h2 a {
-	-moz-transition: color 0.1s ease-in-out 0s;
-	-o-transition: color 0.1s ease-in-out 0s;
-	-webkit-transition: color 0.1s ease-in-out 0s;
-	color: #E7E7E7;
-	transition: color 0.1s ease-in-out 0s;
-}
-
-h2 a:hover {
-	color: #F8C6AD;
-}
-
 
 /* CONTENT */
 
-.helper {
-	display: inline-block;
-	vertical-align: middle;
-	height: 100%;
+#content {
+	background: #FFFFFF;
+	margin: 0 auto;
+	width: 1000px;
+}
+
+#content h1, #content h2 {
+	color: #020201;
+	clear: both;
+	float: left;
+	position: relative;
+	margin-left: 50px;
+	font-weight: bold;
+	text-align: left;
+	padding: 15px 0;
+	width: 500px;
+}
+
+#content h1 {
+	border-bottom: 4px solid #020201;
+	font-family: "ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3", "Hiragino Kaku Gothic Pro";
+	margin-top: -10px;
+}
+
+#content h2 {
+	font-family: "bold", sans;
+	font-size: 11px;
+	margin-top: 50px;
 }
 
 #content img {
-	border: 20px solid #F9F7F6;
 	margin: 0 auto;
 	vertical-align: middle;
-}
-
-hr {
-	border: none;
-	height: 0px;
-	margin: 0px;
-	padding: 0px;
+	margin-top: 15px;
 }
