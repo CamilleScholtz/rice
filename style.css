@@ -6,15 +6,15 @@
 }
 
 * {
-	text-decoration: none;
-	outline: 0px;
 	font-style :normal;
 	font-weight: normal;
 	font-size: 100%;
+	outline: 0px;
+	text-decoration: none;
 }
 
 html, body {
-	background: #D8C0A3;
+	background: #868489;
 	margin: 0px;
 }
 
@@ -26,7 +26,7 @@ body {
 	background: #F0D6B5;
 	box-shadow: 7px 0px 30px rgba(195, 110, 56, 0.2);
 	text-align: center;
-	overflow-y: hidden; /* lfdev: setting this to scroll will make it scroll, however there will be a scrollbar */
+	overflow-y: scroll;
 	height: calc(100vh - 60px);
 	margin: 30px;
 }
@@ -83,6 +83,7 @@ body {
 #header a:hover {
 	color: #615749;
 }
+
 
 /* CONTENT */
 
